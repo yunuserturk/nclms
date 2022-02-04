@@ -22,13 +22,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item ">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="dashboard.html">Dashboard </a>
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Events <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link">My Courses</a>
@@ -41,13 +41,18 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Yunus Ertürk <img class="mr-2 avatar" src="https://secure.gravatar.com/avatar/1300213367444d6ea0d16135513e3381?s=30" alt=""></a>
+              <a class="nav-link" href="#">Yunus Ertürk <img class="mr-2 avatar" src="https://picsum.photos/30/30" alt=""></a>
             </li>
            
           </ul>
         </div>
     </nav>
-   
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">NuCamp Course</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Events</li>
+        </ol>
+      </nav>
     <div class="container">
         <div class="row mt-4">
             <div class="col-md-9">
@@ -55,33 +60,53 @@
                     <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                Welcome, Yunus. You registered 1 course. You have 0 notifications. Next bill payment date: 02/02/2022
+                                You have 1 upcoming event. Free until: 02/02/2022
                             </div>
                           </div>
                         
                     </div>
                 </div>
                 <div class="row mt-4">
-                    <div class="col-md-4 col-12">
+                    <div class="col-md-12">
                         <div class="card">
-                            <img src="images/courses/bootstrap.jpg" class="card-img-top" alt="Bootstrap Course">
+                            <div class="card-header">
+                                <h5 class="float-left">Mandatory Weekly Workshop</h5><span class="float-right">02/02/2022</span>
+                            </div>
                             <div class="card-body">
-                              <h5 class="card-title">Bootstrap Course</h5>
-                              <p class="card-text">5 Week 26 Hours 2 Project</p>
-                              <a href="#" class="btn btn-primary">Course</a>
+                                <p class="card-text">Join this weekly workshop to work with your classmates and instructor on the end of week assignment.</p>
+                                <p class="card-text">The workshops will take place online via Zoom at https://us06web.zoom.us/j/83173834427.</p>
+                                <p class="card-text">Times: from 9am to 1pm Pacific PACIFIC TIME</p>
+                                <p class="card-text">In case of emergency (missing Instructor, locked building or other): please contact Nucamp at studentadmin@nucamp.co, provide your location and a short description of the issue. We will respond immediately.</p>
+                                
+                            </div>
+                            <div class="card-footer">
+                                <div class="row">
+                                    <div class="col-auto">
+                                        <h5>Date</h5>
+                                        <p>Feb 02, 2022</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h5>Location</h5>
+                                        <p>Zoom</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h5>Category </h5>
+                                        <p>Group Event</p>
+                                    </div>
+                                    <div class="col-auto">
+                                        <h5>Course</h5>
+                                        <p>Responsive with Bootstrap</p>
+                                    </div>
+                                    <div class="col-auto ml-auto text-center">
+                                        <a href="#"><i class="far fa-lg fa-calendar-plus mb-2"></i><br>
+                                        Add to Cal</a>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4 col-12">
-                        <div class="card">
-                            <img src="images/courses/react.jpg" class="card-img-top" alt="React Course">
-                            <div class="card-body">
-                              <h5 class="card-title">React Course</h5>
-                              <p class="card-text">5 Week 26 Hours 2 Project</p>
-                              <a href="#" class="btn btn-primary">Course</a>
-                            </div>
-                        </div>
-                    </div>
+                    
 
                 </div>
             </div>

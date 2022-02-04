@@ -1,0 +1,49 @@
+body{
+    background-color: aliceblue;
+}
+
+.welcomearea{
+    
+}
+
+.course-loading-parent{
+
+    display: table-cell;
+    vertical-align: middle;
+
+}
+
+.course-loading-inner{
+    display: inline-block;
+    height: 10px;
+    width: 100%;
+}
+
+.event-date{
+    float: right;
+    font-style: italic;
+}
+
+.block-inside{
+    padding: 0.75rem 1.25rem;
+}
+
+.block-inside i {
+    margin-right: 0.5rem;
+}
+
+.avatar{
+    border-radius: 50%;
+}
+
+.navbar .count-container {
+    padding: 2px;
+    border-radius: 2px;
+    background-color: #ca3120;
+    color: #fff;
+    font-size: 11px;
+    line-height: 11px;
+    position: relative;
+    bottom: 10px;
+    right: 5px;
+}
