@@ -22,13 +22,13 @@
         <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
             <li class="nav-item ">
-              <a class="nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item ">
-              <a class="nav-link" href="dashboard.html">Dashboard </a>
+              <a class="nav-link" href="dashboard.html">Dashboard</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="events.html">Events</a>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Events <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="course.html">My Courses</a>
@@ -47,41 +47,60 @@
           </ul>
         </div>
     </nav>
-   
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">NuCamp Course</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Events</li>
+        </ol>
+      </nav>
     <div class="container">
         <div class="row mt-4">
             <div class="col-md-9">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="card">
-                            <div class="card-body">
-                                Welcome, Yunus. You registered 1 course. You have 0 notifications. Next bill payment date: 02/02/2022
-                            </div>
-                          </div>
-                        
-                    </div>
-                </div>
+                
                 <div class="row mt-4">
-                    <div class="col-md-4 col-12">
-                        <div class="card">
-                            <img src="images/courses/bootstrap.jpg" class="card-img-top" alt="Bootstrap Course">
-                            <div class="card-body">
-                              <h5 class="card-title">Bootstrap Course</h5>
-                              <p class="card-text">5 Week 26 Hours 2 Project</p>
-                              <a href="#" class="btn btn-primary">Course</a>
-                            </div>
-                        </div>
+                  <div class="col-12">
+                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                      <li class="nav-item">
+                        <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Manage Account</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile Options</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Billing Information</a>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="pills-tabContent">
+                      <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                        <form>
+                          <div class="form-group">
+                            <label for="formNameInput">Name</label>
+                            <input type="text" class="form-control" id="formNameInput" placeholder="Yunus" value="Yunus">
+                          </div>
+                          <div class="form-group">
+                            <label for="formLastNameInput">Name</label>
+                            <input type="text" class="form-control" id="formLastNameInput" placeholder="Erturk" value="Erturk">
+                          </div>
+                          <div class="form-group">
+                            <label for="emailInput">Email address</label>
+                            <input type="email" class="form-control" id="emailInput" placeholder="yunuserturk@gmail.com" value="yunuserturk@gmail.com">
+                          </div>
+                          <div class="form-group">
+                            <label for="formCityInput">City/Town</label>
+                            <input type="text" class="form-control" id="formCityInput" placeholder="San Francisco" value="San Francisco">
+                          </div>
+                          <div class="form-group">
+                            <label for="profileDescriptionInput">Profile Description</label>
+                            <textarea class="form-control" id="profileDescriptionInput" rows="3" placeholder="This text will appear on your profile."></textarea>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">.asdasd..</div>
+                      <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">..asdasdasd.</div>
                     </div>
-                    <div class="col-md-4 col-12">
-                        <div class="card">
-                            <img src="images/courses/react.jpg" class="card-img-top" alt="React Course">
-                            <div class="card-body">
-                              <h5 class="card-title">React Course</h5>
-                              <p class="card-text">5 Week 26 Hours 2 Project</p>
-                              <a href="#" class="btn btn-primary">Course</a>
-                            </div>
-                        </div>
-                    </div>
+                  </div>
+                  
+                    
 
                 </div>
             </div>
