@@ -30,15 +30,31 @@
             <li class="nav-item ">
               <a class="nav-link" href="events.html">Events</a>
             </li>
-            <li class="nav-item active">
-                <a class="nav-link">My Courses <span class="sr-only">(current)</span></a>
-              </li>
+            <li class="nav-item dropdown active">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                My Courses
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                <a class="dropdown-item" href="precourse.html">Bootstrap Course</a>
+                <a class="dropdown-item" href="course.html">Last Lesson</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="index.html">Enroll New Course</a>
+              </div>
+            </li>
           </ul>
           <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-            <li class="nav-item">
-              <a class="nav-link" href="#"> 
+            <li class="nav-item dropdown">
+              <a class="nav-link " href="#" type="button" id="dropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> 
                 <i class="fas fa-bell"></i><span class="count-container">2</span>
               </a>
+              <ul class="dropdown-menu dropdown-menu-right"  aria-labelledby="dropdownMenuLink" >
+                <li class="dropdown-item">Cras justo odio</li>
+                <li class="dropdown-item">Dapibus ac facilisis in</li>
+                <li class="dropdown-item">Morbi leo risus</li>
+                <li class="dropdown-item">Porta ac consectetur ac</li>
+                <li class="dropdown-item list-group-item-light"><a href="#" class="">Clear All</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Yunus Ertürk <img class="mr-2 avatar" src="https://secure.gravatar.com/avatar/1300213367444d6ea0d16135513e3381?s=30" alt=""></a>
@@ -51,7 +67,7 @@
         <ol class="breadcrumb">
           <li class="breadcrumb-item"><a href="#">NuCamp Course</a></li>
           <li class="breadcrumb-item"><a href="#">Bootstrap</a></li>
-          <li class="breadcrumb-item"><a href="#">Week 4</a></li>
+          <li class="breadcrumb-item"><a href="precourse.html#collapse4">Week 4</a></li>
           <li class="breadcrumb-item active" aria-current="page">Current Lesson</li>
         </ol>
       </nav>
@@ -163,9 +179,9 @@
                             <ul class="list-group list-group-flush">
                               <li class="list-group-item"><a href="account.html">Account Settings</a></li>
                               <li class="list-group-item"><a href="profile.html">Profile</a></li>
-                              <li class="list-group-item">Notifications <span class="badge badge-danger">2</span></li>
+                              <li class="list-group-item"><a href="notifications.html">Notifications <span class="badge badge-danger">2</span></a></li>
                               <li class="list-group-item"><a href="events.html">Calendar</a></li>
-                              <li class="list-group-item">Logut</li>
+                              <li class="list-group-item">Logout</li>
                             </ul>
                         </div>
                     </div>
@@ -173,24 +189,24 @@
                 </div>
                 <div class="row mt-4">
                     <div class="col-12">
-                        <div class="card">
-                            <div class="card-header">
-                              My Instructor
-                            </div>
-                            <ul class="list-group list-group-flush">
-                              <li class="list-group-item">
-                                <div class="media">
-                                    <img src="https://picsum.photos/id/447/60/60" alt="">
-                                    <div class="media-body ml-3">
-                                      <h6 class="mt-0">Scott Henscheid</h6>
-                                      
-                                    </div>
-                                  </div>
-                              </li>
-                              <li class="list-group-item">Send Message</li>
-                              <li class="list-group-item">Find Forum Messages</li>
-                            </ul>
+                      <div class="card">
+                        <div class="card-header">
+                          My Instructor
                         </div>
+                        <ul class="list-group list-group-flush">
+                          <li class="list-group-item">
+                            <div class="media">
+                                <img src="https://picsum.photos/id/447/60/60" alt="">
+                                <div class="media-body ml-3">
+                                  <h6 class="mt-0">Scott Henscheid</h6>
+                                  
+                                </div>
+                              </div>
+                          </li>
+                          <li class="list-group-item"><a href="messages.html"> Send Message</a></li>
+                          <li class="list-group-item"><a href="forum.html">Find Forum Messages</a></li>
+                        </ul>
+                    </div>
                     </div>
 
                 </div>

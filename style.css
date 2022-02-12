@@ -86,3 +86,22 @@ body{
 .lesson-active a, .lesson-done a{
     color: #111;
 }
+
+.course-block-link{
+    color: unset;
+}
+
+.course-block-link:hover{
+    text-decoration: none;
+    color: unset;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+ .dropdown:not(:hover) .dropdown-menu {
+    display: none;
+    margin-top: 0;
+ }
