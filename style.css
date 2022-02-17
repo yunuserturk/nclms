@@ -105,3 +105,81 @@ body{
     display: none;
     margin-top: 0;
  }
+
+ .messages-left .date, .notifications-panel .date{
+    float: right;
+    font-size: 12px;
+    font-weight: 500;
+ }
+
+ .messages-left .date {
+    opacity: 0.4;
+ }
+
+ .messages-left .user{
+    font-size: 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 70%;
+   
+    float: left;
+ }
+
+ .messages-left .media-body{
+     overflow: hidden;
+ }
+
+ .messages-left .message-text-summary {
+    clear: both;
+    font-size: 14px;
+ }
+
+ .chat-window{
+    max-height: 60vh;
+    overflow: auto;
+    display: flex;
+    flex-direction: column-reverse;
+ }
+
+ .chat-history ul{
+     padding: 0;
+ }
+
+ .chat-history ul li{
+     list-style: none;
+     margin-bottom: 10px;
+ }
+
+ .chat-history .message-data {
+     font-size: 10px;
+ }
+
+ .chat-history .other-message {
+    background: #e8f1f3;
+    text-align: left;
+ }
+
+ .chat-history .my-message {
+    background: #76ecb1;
+    text-align: right;
+ }
+
+ .chat-history .message{
+     max-width: 70%;
+     border-radius: 7px;
+     display: inline-block;
+     line-height: 26px;
+     padding: 15px;
+ }
+
+.chat-history .my-message-li .message-data{
+    text-align: right;
+}
+
+.chat-history .my-message-li .message{
+    float: right;
+}
+
+.notifications-panel li{
+    line-height: 1.5em;
+}
