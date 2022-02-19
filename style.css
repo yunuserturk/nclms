@@ -2,6 +2,10 @@ body{
     background-color: aliceblue;
 }
 
+a{
+    color: inherit;
+}
+
 .welcomearea{
     
 }
@@ -182,4 +186,9 @@ body{
 
 .notifications-panel li{
     line-height: 1.5em;
+}
+
+.navbar .instructor .avatar{
+    width: 30px;
+    height: 30px;
 }
