@@ -131,10 +131,10 @@
                       <small id="newPasswordHelp" class="form-text text-muted">Fill input only when you want to change your password.</small>
                     </div>
                     <div class="form-group">
-                      <label for="profileDescriptionInput">Your Social Profiles</label>
+                      <label for="socialProfilesInput">Your Social Profiles</label>
                       <textarea
                         class="form-control"
-                        id="profileDescriptionInput"
+                        id="socialProfilesInput"
                         rows="3"
                         placeholder="https://instagram.com/yourprofile&#10;https://facebook.com/yourprofile"
                       ></textarea>
@@ -182,8 +182,8 @@
                             <input type="text" class="form-control" name="lessons_0" id="lessons_0" value="Welcome Lesson 1" required />
                           </div>
                           <div class="col-md-3">
-                            <label for="validationTooltip04">Section</label>
-                            <select class="custom-select" id="validationTooltip04" required>
+                            <label for="lessons_select_0">Section</label>
+                            <select class="custom-select" id="lessons_select_0" name="lessons_select_0" required>
                               <option selected disabled value="">Choose...</option>
                               <option>Section 1</option>
                               <option>Section 2</option>
@@ -191,9 +191,23 @@
                             <div class="invalid-tooltip">Please select a valid state.</div>
                           </div>
                           <div class="col-md-3 mt-3 d-flex align-items-end">
+                            <button type="button" class="btn btn-primary mr-2" id="lessons_textarea_0" name="lessons_textarea_0">
+                              Edit
+                            </button>
                             <button class="lessons_del btn btn-danger">Delete</button>
                           </div>
+                          
                         </div>
+                        <div class="form-group row">
+                          <div class="col-md-12">
+                            <div class="collapse" name="textarea_0" id="textarea_0">
+                            
+                              <textarea class="form-control" id="lesson_content_0" name="lesson_content_0" rows="3" placeholder="This text will appear on course page."></textarea>
+                           
+                            </div>
+                          </div>
+                        </div>
+                        
                       </li>
                     </ol>
 
@@ -270,10 +284,13 @@
     <script>
       $("#lessons").addInputArea();
       $("#sections").addInputArea();
-      $('#summernote').summernote({
-        placeholder: 'Hello Bootstrap 4',
+      $('#lesson_content_0').summernote({
+        placeholder: 'Please create your lesson content',
         tabsize: 2,
         height: 100
+      });   
+      $("#lessons_textarea_0").click(function(){
+        $('#textarea_0').collapse("toggle"); 
       });
     </script>
   </body>
